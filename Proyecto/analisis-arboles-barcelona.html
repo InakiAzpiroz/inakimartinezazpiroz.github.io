@@ -58,27 +58,30 @@
 <link rel="stylesheet" href="../css/estilos.css">
 
 <style>
-    body {
-        background-color: var(--bg-principal) !important;
-        color: var(--texto-claro) !important;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
-        padding: 40px 20px !important;
-    }
-    
-    /* Centra el cuaderno y lo hace parecer un artículo de blog minimalista */
-    #notebook, .jp-Notebook, #notebook-container {
-        box-shadow: none !important;
-        background-color: transparent !important;
-        max-width: 850px !important;
-        margin: 0 auto !important;
-    }
+        /* Modifica el cuerpo respetando las variables de tu portfolio */
+        body {
+            background-color: var(--bg-principal) !important;
+            color: var(--texto-claro) !important;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+            padding: 40px 20px !important;
+        }
+        
+        /* Centra el contenedor exterior del blog sin tocar el interior */
+        #notebook, .jp-Notebook, #notebook-container {
+            box-shadow: none !important;
+            background-color: transparent !important;
+            max-width: 900px !important;
+            margin: 0 auto !important;
+        }
 
-    /* Suaviza los bordes de las celdas de código de Jupyter */
-    .input_area, .jp-Cell-inputArea {
-        border: 1px solid var(--borde-fino) !important;
-        background-color: var(--bg-tarjeta) !important;
-        border-radius: 4px !important;
-    }
+        /* ¡EL ARREGLO CLAVE! 
+           Anulamos cualquier interferencia indeseada en los bloques de código y celdas
+        */
+        .jp-Cell, .cell, .input_area, .jp-Cell-inputArea, .output_wrapper, .pre {
+            background-color: inherit !important;
+            border: none !important;
+            box-shadow: none !important;
+        }
 </style>
 
 <style type="text/css">
