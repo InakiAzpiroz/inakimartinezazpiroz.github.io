@@ -240,7 +240,7 @@ header p {
 
 .cv-detalles {
     list-style-type: none;
-    font-size: 0.9磨;
+    font-size: 0.9rem;
     color: var(--texto-mutado);
 }
 
@@ -302,7 +302,7 @@ header p {
     background-color: var(--acento-azul);
 }
 
-/* --- SECCIÓN PREVISUALIZACIÓN LINKEDIN (FICHA PEGADA) --- */
+/* --- SECCIÓN PREVISUALIZACIÓN LINKEDIN --- */
 .tarjeta-linkedin {
     background-color: var(--bg-tarjeta);
     border: 1px solid var(--borde-fino);
@@ -401,4 +401,137 @@ footer a {
 footer a:hover {
     color: var(--acento-azul);
     border-bottom-color: var(--acento-azul);
+}
+
+
+/* ==========================================================================
+   NUEVOS ESTILOS PARA LAS PÁGINAS DE PROYECTOS (ESTILO EDITORIAL)
+   ========================================================================== */
+
+/* --- CABECERA DE NAVEGACIÓN --- */
+.navegacion-proyecto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--borde-fino);
+}
+
+.marca-nombre {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--texto-claro);
+    text-decoration: none;
+    letter-spacing: -0.01em;
+}
+
+.marca-nombre span {
+    font-weight: 400;
+    color: var(--texto-mutado);
+}
+
+.btn-volver {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.85rem;
+    color: var(--texto-mutado);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.btn-volver:hover {
+    color: var(--acento-azul);
+}
+
+/* --- ESTRUCTURA DEL ARTÍCULO --- */
+.articulo-proyecto {
+    max-width: 720px; /* Ancho optimizado para lectura de artículos */
+    margin: 0 auto;
+}
+
+.titular-proyecto {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--texto-claro);
+    margin-bottom: 15px;
+}
+
+.subtitular-proyecto {
+    font-size: 1.25rem;
+    line-height: 1.45;
+    color: var(--texto-mutado);
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+.separador-editorial {
+    border: 0;
+    border-top: 1px solid var(--texto-claro);
+    width: 60px;
+    margin-bottom: 35px;
+}
+
+/* --- TEXTOS TIPO --- */
+.parrafo-proyecto {
+    font-size: 1.05rem;
+    line-height: 1.65;
+    color: var(--texto-claro);
+    margin-bottom: 25px;
+}
+
+.resumen-proyecto {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--texto-claro);
+    background-color: var(--bg-tarjeta);
+    padding: 20px 25px;
+    border-left: 3px solid var(--acento-azul);
+    margin-bottom: 35px;
+    border-radius: 0 4px 4px 0;
+}
+
+/* --- IMÁGENES --- */
+.contenedor-imagen-proyecto {
+    margin-bottom: 35px;
+}
+
+.imagen-proyecto {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid var(--borde-fino);
+}
+
+.pie-foto-proyecto {
+    font-size: 0.85rem;
+    color: var(--texto-mutado);
+    margin-top: 8px;
+    font-style: italic;
+}
+
+/* --- GRÁFICOS RESPONSIVE (HTML INCRUSTADO) --- */
+.contenedor-grafico-incrustado {
+    position: relative;
+    width: 100%;
+    height: 450px; /* Altura ideal para gráficos interactivos */
+    background-color: var(--bg-tarjeta);
+    border: 1px solid var(--borde-fino);
+    border-radius: 4px;
+    margin: 30px 0;
+    overflow: hidden;
+}
+
+.contenedor-grafico-incrustado iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
 }
