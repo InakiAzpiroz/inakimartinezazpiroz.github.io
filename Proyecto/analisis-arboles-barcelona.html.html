@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Árboles de Barcelona | Iñaki Martínez Azpiroz</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <nav class="navegacion-proyecto">
+            <a href="../index.html" class="marca-nombre">Iñaki <span>Martínez Azpiroz</span></a>
+            <a href="../index.html" class="btn-volver">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Volver
+            </a>
+        </nav>
+
+        <main class="articulo-proyecto">
+            
+            <h1 class="titular-proyecto">Análisis de Árboles de Barcelona: El mapa verde de la ciudad a examen</h1>
+            
+            <p class="subtitular-proyecto">Un estudio cuantitativo sobre la distribución, especies y salud del arbolado barcelonés utilizando datos abiertos del Ayuntamiento.</p>
+            
+            <hr class="separador-editorial">
+
+            <div class="contenedor-imagen-proyecto">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Barcelona_Spain_-_panoramio.jpg" alt="Vista general de Barcelona" class="imagen-proyecto">
+                <p class="pie-foto-proyecto">Vista panorámica de la trama urbana de Barcelona. Fuente: Wikipedia.</p>
+            </div>
+
+            <p class="resumen-proyecto">
+                <strong>Resumen:</strong> Este proyecto nace con el objetivo de cruzar los datasets públicos de vegetación urbana para auditar el ecosistema de Barcelona. A través de scripts de extracción de datos, se evalúa si los criterios de biodiversidad actuales son sostenibles o si existe una excesiva concentración de determinadas especies por distritos.
+            </p>
+
+            <p class="parrafo-proyecto">
+                El procesamiento de los datos se realizó íntegramente con <strong>Python</strong> y la librería <strong>Pandas</strong>. El primer reto metodológico consistió en la limpieza de registros nulos y la unificación de los nombres científicos de las especies, los cuales presentaban algunas discrepancias tipográficas entre los distintos conjuntos de datos del consistorio.
+            </p>
+
+            <p class="parrafo-proyecto">
+                Una vez normalizada la información, se aplicaron filtros estadísticos para clasificar el volumen de árboles por metro cuadrado de zona peatonal. Los resultados preliminares muestran una asimetría clara entre los barrios del Eixample y distritos periféricos como Nou Barris.
+            </p>
+
+            <h3 class="subseccion-titulo-azul">Visualización Interactiva de los Datos</h3>
+            <p class="parrafo-proyecto">El siguiente gráfico interactivo ha sido generado con librerías de Python e incrustado directamente para permitir su exploración en tiempo real:</p>
+            
+            <div class="contenedor-grafico-incrustado">
+                <iframe src="images/01_ARBOLES_mapa_densidad.html" title="Mapa de densidad del arbolado en Barcelona"></iframe>
+            </div>
+
+            <p class="parrafo-proyecto">
+                Como se puede observar en la gráfica interactiva superior, el comportamiento de las variables demuestra que la toma de decisiones basada en datos abiertos puede optimizar la planificación urbanística y mitigar el efecto isla de calor eficientemente.
+            </p>
+
+        </main>
+
+        <footer>
+            <p>© 2026 Iñaki Martínez Azpiroz. Diseñado con Gemini.</p>
+            <p>Contacto: <a href="mailto:1998124@gmail.com">1998124@gmail.com</a>  ·  X: <a href="https://x.com/InaMA_1998" target="_blank">@InaMA_1998</a></p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
