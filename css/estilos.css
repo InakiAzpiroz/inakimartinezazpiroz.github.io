@@ -535,3 +535,15 @@ footer a:hover {
     height: 100%;
     border: none;
 }
+
+-- botó nou de pàgines de projectes
+.btn-python {
+    background-color: #dbeafe;   /* azul muy tenue */
+    color: #1d4ed8;              /* azul coherente con tu acento */
+    border: 1px solid #bfdbfe;   /* borde azul suave */
+}
+
+.btn-python:hover {
+    background-color: #bfdbfe;   /* un poco más intenso al hover */
+    color: #1e3a8a;              /* azul más oscuro */
+}
