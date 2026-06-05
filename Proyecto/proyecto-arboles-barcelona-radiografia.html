@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Iñaki Martínez Azpiroz - Python Developer</title>
+    <title>Arbolado de Barcelona | Análisis urbano</title>
     <link rel="stylesheet" href="css/estilos.css">
-<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=U0cHwJSFpb0yVb0ZeFaMoWLMcZS3CFDGb3SAIIiGn5pShe6NX2rpM7RSIInvvz5RjZBAGeDuP4Gnj_soR6As96kXQiCsCg2yE_aZxK3QzounQThjYUHaXgGWlbdw95U4CeOJxoqEjzfbmI2r4eFTxTNodYKRhwkMMeRt968Z8-xj7MXu1I5muRmLKGymAoubC5byRG-DMrv9dPFG2IhrAg" charset="UTF-8"></script></head>
+</head>
+
 <body>
 
     <div class="contenedor">
 
         <header>
             <img src="https://lh3.googleusercontent.com/d/146usE6nP-HhSL1gbkDWgog6Y8PcWWXIQ" alt="Foto de Iñaki Martínez Azpíroz" class="foto-perfil">
-            
+
             <h1><span>Iñaki</span> Martínez Azpiroz</h1>
             <p>Periodista, politólogo y Desarrollador Python especializado en Análisis de Datos. Conecto el rigor de las ciencias sociales y la comunicación con el poder de la programación para extraer conocimiento a través de los datos y el <span style="font-style: italic;">storytelling</span> de la visualización.</p>
-            
+
             <div class="badges-tecnologias">
                 <span class="badge">Python</span>
                 <span class="badge">SQL</span>
@@ -29,245 +31,140 @@
         </header>
 
         <main>
-            <h2 class="seccion-titulo-azul-completo">Proyectos destacados</h2>
-            
-            <div class="grid-proyectos">
 
-                <article class="tarjeta-proyecto">
-                    <div>
-                        <h3>Análisis de Árboles de Barcelona</h3>
-                        <p>Estudio de la distribución de los árboles de Barcelona utilizando Python para limpiar y cruzar diferentes datos públicos del Ayuntamiento de Barcelona, con análisis y visualizaciones interactivas.</p>
-                    </div>
-                    <a href="Proyecto/analisis-arboles-barcelona.html" class="btn-proyecto" target="_blank">Abrir análisis completo</a>
-                </article>
+            <!-- TITULAR PRINCIPAL -->
+            <h1>Arbolado de Barcelona: radiografía de la capital catalana</h1>
 
-                <article class="tarjeta-proyecto">
-                    <div>
-                        <h3>Modelo de Clasificación de Clientes</h3>
-                        <p>Implementación de algoritmos de Machine Learning (Scikit-Learn) para segmentar usuarios según su comportamiento de compra.</p>
-                    </div>
-                    <a href="mi_proyecto_2.html" class="btn-proyecto" target="_blank">Abrir análisis completo</a>
-                </article>
+            <!-- LEAD -->
+            <p class="lead">
+                El proyecto analiza la distribución espacial de los árboles de la ciudad de Barcelona. Parte de un repositorio de datos abiertos que dispone el Ayuntamiento de Barcelona, y lo cruza con otras bases de datos como las secciones censales y las cifras demográficas del padrón. El análisis se hace sobre la unidad territorial existente más pequeña, la sección censal, con el objetivo de obtener una mayor precisión de las distribuciones.
+            </p>
 
-                <article class="tarjeta-proyecto">
-                    <div>
-                        <h3>Automatización e Ingesta de APIs</h3>
-                        <p>Script que extrae datos meteorológicos en tiempo real, procesa la información y genera gráficos automáticos diariamente.</p>
-                    </div>
-                    <a href="mi_proyecto_3.html" class="btn-proyecto" target="_blank">Abrir análisis completo</a>
-                </article>
+            <!-- INTRO -->
+            <p>
+                Las bases de datos utilizadas son las siguientes:
+            </p>
 
-            </div>
+            <p>
+                1. Catálogo de todos los árboles de la ciudad de Barcelona, repartidos en archivos para el
+                <a href="https://opendata-ajuntament.barcelona.cat/data/ca/dataset/arbrat-viari" target="_blank">arbolado viario</a>,
+                el
+                <a href="https://opendata-ajuntament.barcelona.cat/data/ca/dataset/arbrat-zona" target="_blank">arbolado de zona</a>
+                y el
+                <a href="https://opendata-ajuntament.barcelona.cat/data/ca/dataset/arbrat-parcs" target="_blank">arbolado de parques</a>.
+            </p>
 
-            <div class="contenedor-cv">
-                
-                <h2 class="subseccion-titulo-azul">Trayectoria</h2>
+            <p>
+                2. Geometrías espaciales de las secciones censales de la ciudad de Barcelona, disponibles en
+                <a href="https://opendata-ajuntament.barcelona.cat/data/es/dataset/20170706-districtes-barris" target="_blank">secciones censales</a>.
+            </p>
 
-                <div class="bloque-cv">
-                    <div class="cv-encabezado">
-                        <h3 class="cv-puesto">Periodista Económico Multimedia</h3>
-                        <span class="cv-fecha">Junio 2026 — Actualidad</span>
-                    </div>
-                    <div class="cv-entidad">Agència Catalana de Notícies - Barcelona (Catalunya)</div>
-                    <ul class="cv-detalles">
-                        <li>Seguimiento de la actualidad económica catalana.</li>
-                        <li>Creación de contenidos en texto, fotografía y vídeo para agencia.</li>
-                    </ul>
-                </div>
+            <p>
+                3. Población de cada sección censal en la ciudad de Barcelona a partir de
+                <a href="https://opendata-ajuntament.barcelona.cat/data/es/dataset/pad_mdbas_sexe" target="_blank">población de cada sección censal</a>.
+            </p>
 
-                <div class="bloque-cv">
-                    <div class="cv-encabezado">
-                        <h3 class="cv-puesto">Periodista Fact-Checker</h3>
-                        <span class="cv-fecha">Marzo 2025 — Junio 2026</span>
-                    </div>
-                    <div class="cv-entidad">Verificat.cat - Barcelona (Catalunya)</div>
-                    <ul class="cv-detalles">
-                        <li>Verificación de desinformaciones vinculadas a sectores políticos y económicos de Catalunya y de redes.</li>
-                        <li>Aplicación de técnicas de fact-checking y análisis de datos para procesos de verificación periodística.</li>
-                        <li>Uso diario de bases de datos oficiales como Idescat, INE y otros datos abiertos con Python y Excel.</li>
-                    </ul>
-                </div>
+            <!-- PROCESO -->
+            <h2 class="seccion-titulo-azul-completo">Metodología del análisis</h2>
 
-                <div class="bloque-cv">
-                    <div class="cv-encabezado">
-                        <h3 class="cv-puesto">Periodista Político</h3>
-                        <span class="cv-fecha">Abril 2024 — Febrero 2025</span>
-                    </div>
-                    <div class="cv-entidad">Europa Press - Barcelona (Catalunya)</div>
-                    <ul class="cv-detalles">
-                        <li>Seguimiento diario de la política catalana, empezando desde la cobertura de la campaña electoral del 12 de mayo de 2024.</li>
-                        <li>Redacción y edición de contenidos informativos de texto e imaggen para agencia.</li>
-                        <li>Creación edición y cierre informativo durante fines de semana.</li>
-                    </ul>
-                </div>
+            <p>
+                1. Integración de datasets arbóreos: carga y concatenación de las bases de datos de arbolado urbano en una única tabla unificada.
+            </p>
 
-                <div class="bloque-cv">
-                    <div class="cv-encabezado">
-                        <h3 class="cv-puesto">Periodista Económico Multimedia</h3>
-                        <span class="cv-fecha">Septiembre 2023 — Abril 2024</span>
-                    </div>
-                    <div class="cv-entidad">Agencia EFE - Barcelona (Catalunya)</div>
-                    <ul class="cv-detalles">
-                        <li>Redacción de contenidos económicos y empresariales para agencia de noticias.</li>
-                        <li>Cobertura de eventos como el Mobile World Congress y reuniones empresariales relevantes.</li>
-                        <li>Creación de contenidos en texto, fotografía y vídeo.</li>
-                    </ul>
-                </div>
+            <p>
+                2. Agregación espacial por unidad territorial: cálculo del número total de árboles por sección censal.
+            </p>
 
-                <div class="bloque-cv">
-                    <div class="cv-encabezado">
-                        <h3 class="cv-puesto">Corresponsal</h3>
-                        <span class="cv-fecha">Noviembre 2022 — Julio 2023</span>
-                    </div>
-                    <div class="cv-entidad">Agencia EFE - Santiago de Chile</div>
-                    <ul class="cv-detalles">
-                        <li>Seguimiento de la actualidad política y social de Chile.</li>
-                        <li>Cobertura del segundo proceso constituyente chileno y del contexto previo al 50 aniversario del golpe de Estado de 1973.</li>
-                        <li>Elaboración de reportajes multimedia sobre tecnología, medio ambiente, patrimonio, cultura e historia.</li>
-                    </ul>
-                </div>
+            <p>
+                3. Distancia al centro urbano: cálculo desde el centroide de cada sección censal hasta Plaça Catalunya.
+            </p>
 
-                <div class="bloque-cv">
-                    <div class="cv-encabezado">
-                        <h3 class="cv-puesto">Periodista Multimedia</h3>
-                        <span class="cv-fecha">Noviembre 2021 — Julio 2022</span>
-                    </div>
-                    <div class="cv-entidad">Agencia EFE - Barcelona (Catalunya)</div>
-                    <ul class="cv-detalles">
-                        <li>Cobertura de tribunales y sucesos de actualidad.</li>
-                        <li>Manejo de documentación judicial y seguimiento de juicios relevantes.</li>
-                        <li>Formación especializada en grabación y edición de vídeo con terminales móvil.</li>
-                    </ul>
-                </div>
+            <p>
+                4. Distribución de densidad arbórea según distancia al centro.
+            </p>
 
-                <div class="bloque-cv">
-                    <div class="cv-encabezado">
-                        <h3 class="cv-puesto">Periodista</h3>
-                        <span class="cv-fecha">Agosto 2021 — Septiembre 2021</span>
-                    </div>
-                    <div class="cv-entidad">Europa Press - Barcelona (Catalunya)</div>
-                    <ul class="cv-detalles">
-                        <li>Seguimiento de la actualidad de distintas secciones informativas.</li>
-                        <li>Apoyo a la delegación en tareas de redacción y cobertura diaria.</li>
-                    </ul>
-                </div>
+            <p>
+                5. Integración sociodemográfica mediante datos de padrón municipal.
+            </p>
 
-                <div class="bloque-cv">
-                    <div class="cv-encabezado">
-                        <h3 class="cv-puesto">Periodista Redactor</h3>
-                        <span class="cv-fecha">Abril 2021 — Junio 2021</span>
-                    </div>
-                    <div class="cv-entidad">Agencia EFE - Barcelona (Catalunya)</div>
-                    <ul class="cv-detalles">
-                        <li>Cobertura de noticias de sociedad para agencia.</li>
-                        <li>Redacción de contenidos sobre temáticas diversas y de actualidad.</li>
-                    </ul>
-                </div>
+            <p>
+                6. Normalización por población: árboles por cada 100 habitantes.
+            </p>
 
-                <div class="bloque-cv">
-                    <div class="cv-encabezado">
-                        <h3 class="cv-puesto">Periodista Redactor</h3>
-                        <span class="cv-fecha">Junio 2020 — Septiembre 2020</span>
-                    </div>
-                    <div class="cv-entidad">Noticias de Navarra - Pamplona (Navarra)</div>
-                    <ul class="cv-detalles">
-                        <li>Cobertura de actualidad política y económica de Navarra.</li>
-                        <li>Elaboración de reportajes económicos y seguimiento institucional.</li>
-                    </ul>
-                </div>
+            <p>
+                7. Clasificación de cobertura arbórea y visualización espacial.
+            </p>
 
-                <div class="bloque-cv">
-                    <div class="cv-encabezado">
-                        <h3 class="cv-puesto">Periodista Redactor</h3>
-                        <span class="cv-fecha">Junio 2019 — Agosto 2019</span>
-                    </div>
-                    <div class="cv-entidad">Berria.eus - Pamplona (Navarra)</div>
-                    <ul class="cv-detalles">
-                        <li>Redacción de noticias, reportajes y crónicas para edición web y papel.</li>
-                        <li>Cobertura de actualidad navarra y de eventos culturales.</li>
-                    </ul>
-                </div>
+            <p>
+                8. Análisis de especies dominantes y su distribución territorial.
+            </p>
 
-                <h2 class="subseccion-titulo-azul">Educación</h2>
+            <!-- MAPA INICIAL -->
+            <h2 class="subseccion-titulo-azul">Distribución general del arbolado</h2>
 
-                <div class="bloque-cv">
-                    <div class="cv-encabezado">
-                        <h3 class="cv-puesto">Grado en Periodismo</h3>
-                        <span class="cv-fecha">2017 — 2022</span>
-                    </div>
-                    <div class="cv-entidad">Universitat Pompeu Fabra (Barcelona)</div>
-                    <ul class="cv-detalles">
-                        <li>Formación especializada en comunicación, redacción periodística y análisis de actualidad.</li>
-                    </ul>
-                </div>
+            <img src="images/arboles/01_ARBOLES_mapa_inicial_estatic" alt="Mapa inicial del arbolado de Barcelona">
 
-                <div class="bloque-cv">
-                    <div class="cv-encabezado">
-                        <h3 class="cv-puesto">Grado en Ciencias Políticas y de la Administración</h3>
-                        <span class="cv-fecha">2018 — 2022</span>
-                    </div>
-                    <div class="cv-entidad">Universitat Pompeu Fabra (Barcelona)</div>
-                    <ul class="cv-detalles">
-                        <li>Especialización en análisis político, instituciones y metodologías de investigación social.</li>
-                    </ul>
-                </div>
+            <!-- RESULTADOS -->
+            <h2 class="seccion-titulo-azul-completo">Resultados del análisis</h2>
 
-                <div class="bloque-cv">
-                    <div class="cv-encabezado">
-                        <h3 class="cv-puesto">Máster en Periodismo Transmedia</h3>
-                        <span class="cv-fecha">2023</span>
-                    </div>
-                    <div class="cv-entidad">UNED — Universidad Nacional de Educación a Distancia</div>
-                    <ul class="cv-detalles">
-                        <li>Formación avanzada en narrativas digitales, comunicación multimedia y formatos transmedia.</li>
-                    </ul>
-                </div>
+            <p>
+                La densidad urbana en el centro de la ciudad, tanto de población como de infraestructuras, contribuye a que exista una menor presencia de árboles en comparación con la periferia.
+            </p>
 
-                <div class="bloque-cv">
-                    <div class="cv-encabezado">
-                        <h3 class="cv-puesto">Máster en Escritura, Creación Literaria y Narrativa</h3>
-                        <span class="cv-fecha">2023</span>
-                    </div>
-                    <div class="cv-entidad">Aula de Escritores</div>
-                    <ul class="cv-detalles">
-                        <li>Especialización en técnicas narrativas, escritura creativa y construcción de relatos.</li>
-                    </ul>
-                </div>
+            <p>
+                Si se observa la densidad de árboles por hectárea, la diferencia es clara: en la periferia hay más árboles que en el centro, probablemente debido a la mayor disponibilidad de suelo.
+            </p>
 
-                <div class="contenedor-boton-cv">
-                    <a href="tu_cv.pdf" class="btn-descarga-pdf" download>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                        Descargar CV en PDF
-                    </a>
-                </div>
+            <iframe src="images/arboles/01_ARBOLES_mapa_densidad.html" width="100%" height="500"></iframe>
 
-            </div>
+            <p>
+                Sin embargo, la diferencia es aún más evidente cuando se analiza la densidad de árboles en relación con la población de cada sección censal. El centro de la ciudad cuenta con prácticamente la mitad de árboles por cada 100 habitantes que la periferia.
+            </p>
 
-            <h2 class="seccion-titulo-azul-completo">Conecta conmigo</h2>
-            
-            <div class="tarjeta-linkedin">
-                <div class="linkedin-cuerpo">
-                    <div class="linkedin-info">
-                        <h3>Iñaki Martínez Azpiroz</h3>
-                        <div class="linkedin-subtitulo">Python Developer | Data Analyst | Journalist & Politologist</div>
-                        <p>Comparto análisis, artículos técnicos, avances sobre mis proyectos de código y discusiones entre datos abiertos, política y tecnología.</p>
-                    </div>
-                    <div>
-                        <a href="https://www.linkedin.com/in/inaki-m-azpiroz/" class="btn-linkedin" target="_blank">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
-                            Ver perfil profesional
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <iframe src="images/arboles/01_ARBOLES_arboles_por_100_habitantes.html" width="100%" height="500"></iframe>
+
+            <p>
+                En la visualización territorial se identifican zonas con menor presencia de arbolado, como el casco histórico, áreas de Gràcia, el Eixample y partes de Sants-Montjuïc.
+            </p>
+
+            <p>
+                Destacan dos secciones censales sin presencia de árboles, situadas en el Raval y la Barceloneta, lo que las convierte en áreas prioritarias de intervención.
+            </p>
+
+            <iframe src="images/arboles/01_ARBOLES_mapa_areas_arboles_segun_poblacion.HTML" width="100%" height="500"></iframe>
+
+            <p>
+                En cuanto a especies, predomina el platanero, habitual en entornos urbanos y asociado a problemas de alergias en primavera. También destaca el <i>Celtis australis</i>.
+            </p>
+
+            <iframe src="images/arboles/01_ARBOLES_histograma_especies_comunes" width="100%" height="500"></iframe>
+
+            <p>
+                El platanero domina el centro urbano, mientras que en la periferia existe mayor diversidad de especies.
+            </p>
+
+            <iframe src="images/arboles/01_ARBOLES_mapa_especie_comun_secciones_censales.html" width="100%" height="500"></iframe>
+
+            <p>
+                En términos generales, una mayor diversidad de arbolado contribuye a una mayor resiliencia frente al cambio climático y reduce la vulnerabilidad de las especies vegetales.
+            </p>
+
+            <hr>
+
+            <p>
+                FINAL: Este análisis se produjo para un reportaje realizado por Iñaki Martínez Azpiroz desde Verificat, dentro de publicaciones semanales para
+                <a href="https://www.elperiodico.com/es/barcelona/20250810/centro-barcelona-mitad-arboles-habitante-periferia-120453792" target="_blank">El Periódico de Catalunya</a>.
+            </p>
+
         </main>
 
         <footer>
             <p>© 2026 Iñaki Martínez Azpiroz. Diseñado con Gemini.</p>
-            <p>Contacto: <a href="mailto:1998124@gmail.com">1998124@gmail.com</a>  ·  X: <a href="https://x.com/InaMA_1998" target="_blank">@InaMA_1998</a></p>
+            <p>Contacto: <a href="mailto:1998124@gmail.com">1998124@gmail.com</a> · X: <a href="https://x.com/InaMA_1998" target="_blank">@InaMA_1998</a></p>
         </footer>
 
     </div>
 
 </body>
+
 </html>
