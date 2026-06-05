@@ -45,23 +45,26 @@
                 Las bases de datos utilizadas son las siguientes:
             </p>
 
-            <p class="parrafo-proyecto">
-                1. Catálogo de todos los árboles de la ciudad de Barcelona, repartidos en
-                <a href="https://opendata-ajuntament.barcelona.cat/data/ca/dataset/arbrat-viari" target="_blank">arbolado viario</a>,
-                <a href="https://opendata-ajuntament.barcelona.cat/data/ca/dataset/arbrat-zona" target="_blank">arbolado de zona</a>
-                y
-                <a href="https://opendata-ajuntament.barcelona.cat/data/ca/dataset/arbrat-parcs" target="_blank">arbolado de parques</a>.
-            </p>
+            <!-- LISTA 1 -->
+            <ol class="parrafo-proyecto">
+                <li>
+                    Catálogo de todos los árboles de la ciudad de Barcelona, repartidos en
+                    <a href="https://opendata-ajuntament.barcelona.cat/data/ca/dataset/arbrat-viari" target="_blank">arbolado viario</a>,
+                    <a href="https://opendata-ajuntament.barcelona.cat/data/ca/dataset/arbrat-zona" target="_blank">arbolado de zona</a>
+                    y
+                    <a href="https://opendata-ajuntament.barcelona.cat/data/ca/dataset/arbrat-parcs" target="_blank">arbolado de parques</a>.
+                </li>
 
-            <p class="parrafo-proyecto">
-                2. Geometrías espaciales de las secciones censales de la ciudad de Barcelona, disponibles en
-                <a href="https://opendata-ajuntament.barcelona.cat/data/es/dataset/20170706-districtes-barris" target="_blank">secciones censales</a>.
-            </p>
+                <li>
+                    Geometrías espaciales de las secciones censales de la ciudad de Barcelona, disponibles en
+                    <a href="https://opendata-ajuntament.barcelona.cat/data/es/dataset/20170706-districtes-barris" target="_blank">secciones censales</a>.
+                </li>
 
-            <p class="parrafo-proyecto">
-                3. Población de cada sección censal en la ciudad de Barcelona a partir de
-                <a href="https://opendata-ajuntament.barcelona.cat/data/es/dataset/pad_mdbas_sexe" target="_blank">datos del padrón municipal</a>.
-            </p>
+                <li>
+                    Población de cada sección censal en la ciudad de Barcelona a partir de
+                    <a href="https://opendata-ajuntament.barcelona.cat/data/es/dataset/pad_mdbas_sexe" target="_blank">datos del padrón municipal</a>.
+                </li>
+            </ol>
 
             <h3 class="subseccion-titulo-azul">Metodología del análisis</h3>
 
@@ -69,41 +72,18 @@
                 El procesamiento de los datos se realizó íntegramente con Python, integrando y limpiando las distintas fuentes hasta obtener un dataset unificado por sección censal.
             </p>
 
-            <p class="parrafo-proyecto">
-                1. Integración de datasets arbóreos: concatenación de los tres inventarios de arbolado urbano en una única base de datos.
-            </p>
-
-            <p class="parrafo-proyecto">
-                2. Agregación espacial por unidad territorial: cálculo del número total de árboles por sección censal.
-            </p>
-
-            <p class="parrafo-proyecto">
-                3. Distancia al centro urbano: cálculo desde cada sección censal hasta el centro de Barcelona (Plaça Catalunya).
-            </p>
-
-            <p class="parrafo-proyecto">
-                4. Distribución de densidad arbórea en función de la distancia al centro urbano.
-            </p>
-
-            <p class="parrafo-proyecto">
-                5. Integración sociodemográfica mediante datos del padrón municipal.
-            </p>
-
-            <p class="parrafo-proyecto">
-                6. Normalización de cobertura arbórea por población (árboles por cada 100 habitantes).
-            </p>
-
-            <p class="parrafo-proyecto">
-                7. Análisis de relación entre densidad arbórea y centralidad.
-            </p>
-
-            <p class="parrafo-proyecto">
-                8. Clasificación de cobertura arbórea y visualización espacial de las secciones censales.
-            </p>
-
-            <p class="parrafo-proyecto">
-                9. Análisis de distribución de especies y especies dominantes por sección censal.
-            </p>
+            <!-- LISTA 2 -->
+            <ol class="parrafo-proyecto">
+                <li>Integración de datasets arbóreos: concatenación de los tres inventarios de arbolado urbano en una única base de datos.</li>
+                <li>Agregación espacial por unidad territorial: cálculo del número total de árboles por sección censal.</li>
+                <li>Distancia al centro urbano: cálculo desde cada sección censal hasta el centro de Barcelona (Plaça Catalunya).</li>
+                <li>Distribución de densidad arbórea en función de la distancia al centro urbano.</li>
+                <li>Integración sociodemográfica mediante datos del padrón municipal.</li>
+                <li>Normalización de cobertura arbórea por población (árboles por cada 100 habitantes).</li>
+                <li>Análisis de relación entre densidad arbórea y centralidad.</li>
+                <li>Clasificación de cobertura arbórea y visualización espacial de las secciones censales.</li>
+                <li>Análisis de distribución de especies y especies dominantes por sección censal.</li>
+            </ol>
 
             <h3 class="subseccion-titulo-azul">Resultados del análisis</h3>
 
