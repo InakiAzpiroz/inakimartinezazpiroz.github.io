@@ -1,158 +1,168 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arbolado de Barcelona | Análisis urbano</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <title>Análisis del arbolado de Barcelona | Iñaki Martínez Azpiroz</title>
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
-
 <body>
 
     <div class="contenedor">
 
-        <header>
-            <img src="https://lh3.googleusercontent.com/d/146usE6nP-HhSL1gbkDWgog6Y8PcWWXIQ" alt="Foto de Iñaki Martínez Azpíroz" class="foto-perfil">
+        <nav class="navegacion-proyecto">
+            <a href="../index.html" class="marca-nombre">Iñaki <span>Martínez Azpiroz</span></a>
+            <a href="../index.html" class="btn-volver">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Volver
+            </a>
+        </nav>
 
-            <h1><span>Iñaki</span> Martínez Azpiroz</h1>
-            <p>Periodista, politólogo y Desarrollador Python especializado en Análisis de Datos. Conecto el rigor de las ciencias sociales y la comunicación con el poder de la programación para extraer conocimiento a través de los datos y el <span style="font-style: italic;">storytelling</span> de la visualización.</p>
+        <main class="articulo-proyecto">
 
-            <div class="badges-tecnologias">
-                <span class="badge">Python</span>
-                <span class="badge">SQL</span>
-                <span class="badge">HTML</span>
-                <span class="badge">Matplotlib</span>
-                <span class="badge">Plotly</span>
-                <span class="badge">Excel</span>
-                <span class="badge">Gemini</span>
-                <span class="badge">ChatGPT</span>
-            </div>
-        </header>
+            <h1 class="titular-proyecto">Arbolado de Barcelona: radiografía de la capital catalana</h1>
 
-        <main>
-
-            <!-- TITULAR PRINCIPAL -->
-            <h1>Arbolado de Barcelona: radiografía de la capital catalana</h1>
-
-            <!-- LEAD -->
-            <p class="lead">
-                El proyecto analiza la distribución espacial de los árboles de la ciudad de Barcelona. Parte de un repositorio de datos abiertos que dispone el Ayuntamiento de Barcelona, y lo cruza con otras bases de datos como las secciones censales y las cifras demográficas del padrón. El análisis se hace sobre la unidad territorial existente más pequeña, la sección censal, con el objetivo de obtener una mayor precisión de las distribuciones.
+            <p class="subtitular-proyecto">
+                Un análisis basado en datos abiertos del Ayuntamiento de Barcelona que estudia la distribución, densidad y especies del arbolado urbano en relación con la estructura demográfica de la ciudad.
             </p>
 
-            <!-- INTRO -->
-            <p>
+            <hr class="separador-editorial">
+
+            <div class="contenedor-imagen-proyecto">
+                <img src="images/arboles/01_ARBOLES_mapa_inicial_estatic" alt="Mapa inicial del arbolado de Barcelona" class="imagen-proyecto">
+                <p class="pie-foto-proyecto">Mapa inicial del inventario de arbolado urbano en Barcelona.</p>
+            </div>
+
+            <p class="resumen-proyecto">
+                <strong>Resumen:</strong> El proyecto analiza la distribución espacial del arbolado de Barcelona a partir de datos abiertos del Ayuntamiento. Se cruza el inventario de árboles con la división en secciones censales y los datos de población del padrón para estudiar la cobertura verde en la unidad territorial más pequeña disponible.
+            </p>
+
+            <p class="parrafo-proyecto">
+                El estudio parte de un repositorio de datos abiertos del Ayuntamiento de Barcelona, combinando distintas fuentes para construir una visión unificada del ecosistema arbóreo urbano.
+            </p>
+
+            <p class="parrafo-proyecto">
                 Las bases de datos utilizadas son las siguientes:
             </p>
 
-            <p>
-                1. Catálogo de todos los árboles de la ciudad de Barcelona, repartidos en archivos para el
+            <p class="parrafo-proyecto">
+                1. Catálogo de todos los árboles de la ciudad de Barcelona, repartidos en
                 <a href="https://opendata-ajuntament.barcelona.cat/data/ca/dataset/arbrat-viari" target="_blank">arbolado viario</a>,
-                el
                 <a href="https://opendata-ajuntament.barcelona.cat/data/ca/dataset/arbrat-zona" target="_blank">arbolado de zona</a>
-                y el
+                y
                 <a href="https://opendata-ajuntament.barcelona.cat/data/ca/dataset/arbrat-parcs" target="_blank">arbolado de parques</a>.
             </p>
 
-            <p>
+            <p class="parrafo-proyecto">
                 2. Geometrías espaciales de las secciones censales de la ciudad de Barcelona, disponibles en
                 <a href="https://opendata-ajuntament.barcelona.cat/data/es/dataset/20170706-districtes-barris" target="_blank">secciones censales</a>.
             </p>
 
-            <p>
+            <p class="parrafo-proyecto">
                 3. Población de cada sección censal en la ciudad de Barcelona a partir de
-                <a href="https://opendata-ajuntament.barcelona.cat/data/es/dataset/pad_mdbas_sexe" target="_blank">población de cada sección censal</a>.
+                <a href="https://opendata-ajuntament.barcelona.cat/data/es/dataset/pad_mdbas_sexe" target="_blank">datos del padrón municipal</a>.
             </p>
 
-            <!-- PROCESO -->
-            <h2 class="seccion-titulo-azul-completo">Metodología del análisis</h2>
+            <h3 class="subseccion-titulo-azul">Metodología del análisis</h3>
 
-            <p>
-                1. Integración de datasets arbóreos: carga y concatenación de las bases de datos de arbolado urbano en una única tabla unificada.
+            <p class="parrafo-proyecto">
+                El procesamiento de los datos se realizó íntegramente con Python, integrando y limpiando las distintas fuentes hasta obtener un dataset unificado por sección censal.
             </p>
 
-            <p>
+            <p class="parrafo-proyecto">
+                1. Integración de datasets arbóreos: concatenación de los tres inventarios de arbolado urbano en una única base de datos.
+            </p>
+
+            <p class="parrafo-proyecto">
                 2. Agregación espacial por unidad territorial: cálculo del número total de árboles por sección censal.
             </p>
 
-            <p>
-                3. Distancia al centro urbano: cálculo desde el centroide de cada sección censal hasta Plaça Catalunya.
+            <p class="parrafo-proyecto">
+                3. Distancia al centro urbano: cálculo desde cada sección censal hasta el centro de Barcelona (Plaça Catalunya).
             </p>
 
-            <p>
-                4. Distribución de densidad arbórea según distancia al centro.
+            <p class="parrafo-proyecto">
+                4. Distribución de densidad arbórea en función de la distancia al centro urbano.
             </p>
 
-            <p>
-                5. Integración sociodemográfica mediante datos de padrón municipal.
+            <p class="parrafo-proyecto">
+                5. Integración sociodemográfica mediante datos del padrón municipal.
             </p>
 
-            <p>
-                6. Normalización por población: árboles por cada 100 habitantes.
+            <p class="parrafo-proyecto">
+                6. Normalización de cobertura arbórea por población (árboles por cada 100 habitantes).
             </p>
 
-            <p>
-                7. Clasificación de cobertura arbórea y visualización espacial.
+            <p class="parrafo-proyecto">
+                7. Análisis de relación entre densidad arbórea y centralidad.
             </p>
 
-            <p>
-                8. Análisis de especies dominantes y su distribución territorial.
+            <p class="parrafo-proyecto">
+                8. Clasificación de cobertura arbórea y visualización espacial de las secciones censales.
             </p>
 
-            <!-- MAPA INICIAL -->
-            <h2 class="subseccion-titulo-azul">Distribución general del arbolado</h2>
-
-            <img src="images/arboles/01_ARBOLES_mapa_inicial_estatic" alt="Mapa inicial del arbolado de Barcelona">
-
-            <!-- RESULTADOS -->
-            <h2 class="seccion-titulo-azul-completo">Resultados del análisis</h2>
-
-            <p>
-                La densidad urbana en el centro de la ciudad, tanto de población como de infraestructuras, contribuye a que exista una menor presencia de árboles en comparación con la periferia.
+            <p class="parrafo-proyecto">
+                9. Análisis de distribución de especies y especies dominantes por sección censal.
             </p>
 
-            <p>
+            <h3 class="subseccion-titulo-azul">Resultados del análisis</h3>
+
+            <p class="parrafo-proyecto">
+                La densidad urbana en el centro de la ciudad, tanto de población como de infraestructuras, contribuye a una menor presencia de árboles en comparación con la periferia.
+            </p>
+
+            <p class="parrafo-proyecto">
                 Si se observa la densidad de árboles por hectárea, la diferencia es clara: en la periferia hay más árboles que en el centro, probablemente debido a la mayor disponibilidad de suelo.
             </p>
 
-            <iframe src="images/arboles/01_ARBOLES_mapa_densidad.html" width="100%" height="500"></iframe>
+            <div class="contenedor-grafico-incrustado">
+                <iframe src="images/arboles/01_ARBOLES_mapa_densidad.html" title="Mapa de densidad del arbolado en Barcelona"></iframe>
+            </div>
 
-            <p>
+            <p class="parrafo-proyecto">
                 Sin embargo, la diferencia es aún más evidente cuando se analiza la densidad de árboles en relación con la población de cada sección censal. El centro de la ciudad cuenta con prácticamente la mitad de árboles por cada 100 habitantes que la periferia.
             </p>
 
-            <iframe src="images/arboles/01_ARBOLES_arboles_por_100_habitantes.html" width="100%" height="500"></iframe>
+            <div class="contenedor-grafico-incrustado">
+                <iframe src="images/arboles/01_ARBOLES_arboles_por_100_habitantes.html" title="Árboles por 100 habitantes"></iframe>
+            </div>
 
-            <p>
-                En la visualización territorial se identifican zonas con menor presencia de arbolado, como el casco histórico, áreas de Gràcia, el Eixample y partes de Sants-Montjuïc.
+            <p class="parrafo-proyecto">
+                En la visualización territorial se identifican zonas con menor presencia de arbolado, como el casco histórico, Gràcia, el Eixample y partes de Sants-Montjuïc.
             </p>
 
-            <p>
-                Destacan dos secciones censales sin presencia de árboles, situadas en el Raval y la Barceloneta, lo que las convierte en áreas prioritarias de intervención.
+            <p class="parrafo-proyecto">
+                Destaca la existencia de dos secciones censales sin presencia de árboles, situadas en el Raval y la Barceloneta.
             </p>
 
-            <iframe src="images/arboles/01_ARBOLES_mapa_areas_arboles_segun_poblacion.HTML" width="100%" height="500"></iframe>
+            <div class="contenedor-grafico-incrustado">
+                <iframe src="images/arboles/01_ARBOLES_mapa_areas_arboles_segun_poblacion.HTML" title="Áreas sin arbolado"></iframe>
+            </div>
 
-            <p>
-                En cuanto a especies, predomina el platanero, habitual en entornos urbanos y asociado a problemas de alergias en primavera. También destaca el <i>Celtis australis</i>.
+            <p class="parrafo-proyecto">
+                En cuanto a especies, predomina el platanero, una especie habitual en entornos urbanos y asociada a problemas de alergias en primavera. También destaca el <i>Celtis australis</i>.
             </p>
 
-            <iframe src="images/arboles/01_ARBOLES_histograma_especies_comunes" width="100%" height="500"></iframe>
+            <div class="contenedor-grafico-incrustado">
+                <iframe src="images/arboles/01_ARBOLES_histograma_especies_comunes" title="Distribución de especies"></iframe>
+            </div>
 
-            <p>
-                El platanero domina el centro urbano, mientras que en la periferia existe mayor diversidad de especies.
+            <p class="parrafo-proyecto">
+                El platanero domina el centro urbano, mientras que en la periferia se observa una mayor diversidad de especies.
             </p>
 
-            <iframe src="images/arboles/01_ARBOLES_mapa_especie_comun_secciones_censales.html" width="100%" height="500"></iframe>
+            <div class="contenedor-grafico-incrustado">
+                <iframe src="images/arboles/01_ARBOLES_mapa_especie_comun_secciones_censales.html" title="Especie dominante por sección censal"></iframe>
+            </div>
 
-            <p>
+            <p class="parrafo-proyecto">
                 En términos generales, una mayor diversidad de arbolado contribuye a una mayor resiliencia frente al cambio climático y reduce la vulnerabilidad de las especies vegetales.
             </p>
 
-            <hr>
+            <hr class="separador-editorial">
 
-            <p>
-                FINAL: Este análisis se produjo para un reportaje realizado por Iñaki Martínez Azpiroz desde Verificat, dentro de publicaciones semanales para
+            <p class="parrafo-proyecto">
+                <strong>FINAL:</strong> Este análisis se realizó en el marco de un reportaje elaborado por Iñaki Martínez Azpiroz desde Verificat, dentro de publicaciones para 
                 <a href="https://www.elperiodico.com/es/barcelona/20250810/centro-barcelona-mitad-arboles-habitante-periferia-120453792" target="_blank">El Periódico de Catalunya</a>.
             </p>
 
@@ -166,5 +176,4 @@
     </div>
 
 </body>
-
 </html>
